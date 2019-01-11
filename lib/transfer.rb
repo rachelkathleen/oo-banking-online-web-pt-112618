@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if sender.valid?
+    if sender.valid? 
       "blah"
     else
       @status = "rejected"
