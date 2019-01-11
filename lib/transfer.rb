@@ -14,8 +14,9 @@ class Transfer
 
   def execute_transaction
     if valid? == true
-      self.new.receiver.deposit(amount)
-      receiver.balance
+      puts "blah"
+      # self.new.receiver.deposit(amount)
+      # receiver.balance
 
     else
       puts "Transaction rejected. Please check your account balance."
