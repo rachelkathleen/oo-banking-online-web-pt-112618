@@ -16,7 +16,7 @@ class Transfer
     if sender.valid? == true
       "blah"
     else
-      "rejected"
+      "Transaction rejected. Please check your account balance."
   end
 end
 
