@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if BankAccount.name(sender).valid? == true
+    if valid? && sender.balance > amount && self.status == "pending"
       "blah"
     else
       @status = "rejected"
