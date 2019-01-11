@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if BankAccount.sender.valid? == true
+    if BankAccount.name(sender).valid? == true
       "blah"
     else
       @status = "rejected"
